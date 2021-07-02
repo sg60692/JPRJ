@@ -1,0 +1,12 @@
+#Product img{
+    filter: drop-shadow(0.3rem 0.3rem 0.8rem rgb(170, 169, 169));
+    height:40%!important;
+    max-height: 300px;
+}
+h2{
+    padding-bottom: 10px!important;
+}
+#Product{
+    margin-top:-40px;
+    padding-top:40px;
+}

@@ -1,0 +1,43 @@
+/*reset css*/
+#Banner {margin: 0;padding: 0;text-decoration: none;list-style: none;box-sizing:border-box;}
+p{margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; }
+#Banner , img {margin: 0; padding: 0; }
+img {font: inherit; vertical-align: baseline; border: 0; }
+section {display: block; } 
+#Banner {line-height: 0.75; } 
+#Banner {-webkit-box-sizing: border-box; box-sizing: border-box; }
+p{word-wrap: break-word; } 
+
+
+@font-face {font-family: "Gotham Book"; src: url(../fonts/gotham_light.woff) format("woff"); font-weight: 300; font-style: normal; font-display: fallback; }
+@font-face {font-family: "Gotham Book"; src: url(../fonts/gotham_book.woff) format("woff"); font-weight: 400; font-style: normal; font-display: fallback; }
+@font-face {font-family: "Gotham Book"; src: url(../fonts/gotham_medium.woff) format("woff"); font-weight: 500; font-style: normal; font-display: fallback; }
+@font-face {font-family: "Gotham Book"; src: url(../fonts/gotham-bold.woff) format("woff"); font-weight: 700; font-style: normal; font-display: fallback; }
+#Banner {font-family: 'Gotham Book',-apple-system, BlinkMacSystemFont, Segoe UI, segoe ui, SegoeUI, Segoe, Helvetica, Arial, sans-serif; color: #000000; background: #fff; position: relative; -webkit-backface-visibility: hidden !important; backface-visibility: hidden !important; -webkit-overflow-scrolling: touch; font-size:62.5%;-webkit-text-size-adjust:100%; font-weight: 400; -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;font-size: 10px;}
+.good-company .about-codechef, .good-company .founder-words {width: 80%; display: block; }
+.good-company .founder-image, .good-company .founder-words {position:relative;margin-left: auto;margin-right: auto; } 
+.good-company .left-quote {
+  position: absolute; top: 0; left: 0; 
+  background: url(https://s33917.pcdn.co/wp-content/themes/mnet-careers/assets/images/misc/bhavin-left-quote.jpg) no-repeat; 
+  width: 34px; height: 27px; 
+}
+.good-company .right-quote {
+  position: absolute; bottom: 0; right: 0; 
+  background: url(https://s33917.pcdn.co/wp-content/themes/mnet-careers/assets/images/misc/bhavin-right-quote.jpg) no-repeat; 
+  width: 34px; height: 27px; 
+}
+.good-company .duo-wrapper{
+  align-items: center;
+}
+.good-company .codechef-desc, .good-company .founder-text {font-size: 14px; color: #000; line-height: 27px; margin-bottom: 20px;text-align: center; } 
+.good-company .founder-text {padding: 0 50px; }
+.good-company .quote-wrapper {position: relative; }
+@media screen and (max-width: 767px) {
+  .good-company .about-codechef, .good-company .founder-words{
+    width: 100%; display: block; border-right: 0; 
+    max-width: 500px; width: 100%; margin: auto; 
+    float: none; padding: 0; 
+  }
+  .good-company .founder-text {text-align: left;}
+}

@@ -1,0 +1,81 @@
+#About{
+    margin-top: -80px;
+    padding-top: 80px;
+}
+@media screen and (max-width: 768px)
+{
+    #About{
+        margin-top:-212px;
+        padding-top: 212px;
+    }
+}
+@media screen and (max-width: 425px)
+{
+    .fold-2 {
+        margin-top: -7.5rem;
+    }
+    #About{
+        margin-top:-180px;
+        padding-top: 180px;
+    }
+}
+@media screen and (max-width: 320px)
+{
+    .fold-2 {
+        margin-top: -4rem;
+    }
+    #About{
+        margin-top:-130px;
+        padding-top: 130px;
+    }
+}
+.para{
+    font-weight: 600;
+    font-size: 18px;
+    color: grey;      
+}
+.para1{
+    margin-right:5px;
+    text-align: right;
+}
+.para2{
+    text-align: left;
+    margin-left:5px;
+}
+.img1,.img2{
+    height:100%;
+    overflow:hidden;   
+    padding:2px;
+    width:45%; 
+    border-radius:8px;
+    top:0;
+}
+.img1{    
+    -webkit-clip-path: polygon(0% 0,0 100%, 90% 100%, 100% 0);
+    clip-path: polygon(0% 0,0 100%, 90% 100%, 100% 0);
+    float:left;
+}
+.img2{ 
+    -webkit-clip-path: polygon(10% 0,0 100%, 100% 100%, 100% 0);
+    clip-path: polygon(10% 0,0 100%, 100% 100%, 100% 0);    
+    float:right;    
+}
+@media screen and (max-width: 600px) {
+    .img1,.img2{
+        -webkit-clip-path: polygon(0 0,0 100%, 100% 100%, 100% 0);
+        clip-path: polygon(0 0,0 100%, 100% 100%, 100% 0);
+        height:100%;
+        width:50%;
+    }
+    .para{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 2.2;
+    }
+    .para-small{
+        display:none;
+    }
+    .home-form{
+        padding:0;
+    }
+}
