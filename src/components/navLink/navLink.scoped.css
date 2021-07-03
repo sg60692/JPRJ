@@ -4,7 +4,7 @@ li{
     background-color: inherit;
     font-family: "Lato", sans-serif;
 }
-a:hover,.active{
+.active{
     background-color: #127b8e;
 }
 a{
@@ -18,10 +18,10 @@ a{
     text-decoration: none;
 }
 a::selection{
-    background-color: none!important;
+    background-color: none;
 }
 li::selection{
-    background-color: none!important;
+    background-color: none;
 }
 @media screen and (max-width: 800px) {
     
