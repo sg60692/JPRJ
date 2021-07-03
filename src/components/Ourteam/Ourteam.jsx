@@ -12,7 +12,7 @@ function Ourteam() {
                 </div>
                 <div className="row">
                     <div className="col-sm-6">
-                        <div className="">
+                        <div className="animate-left">
                             <div className="Member shadow-lg">
                                 <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />
                                 <div>
@@ -23,7 +23,7 @@ function Ourteam() {
                         </div>
                     </div>
                     <div className="col-sm-6">
-                        <div className="">
+                        <div className="animate-right">
                             <div className="Member shadow-lg">                                
                                 <div>
                                     <h4>Kay Garland</h4>
