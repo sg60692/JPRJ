@@ -1,0 +1,16 @@
+.slide-container{
+    background-color: #F7F4ED;
+
+}
+ h2{
+    padding-top: 10px;
+    margin-left: 400px;
+  }
+  img{
+    border-radius: 25px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 100px;
+    width: 550px;
+    height: 350px;
+  }

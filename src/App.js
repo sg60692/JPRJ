@@ -2,6 +2,7 @@ import react,{ useEffect } from 'react';
 import './App.css';
 import Header from './components/Header/Header.js';
 import Service from './components/Services/Service.js';
+import CarouselContainer from './components/Carousel/caros.js';
 import Banner from './components/Banner/Banner.js';
 import Product from './components/Products/Products.js';
 import Testimonials from './components/Testimonials/Testimonials.js';
@@ -14,6 +15,7 @@ function App() {
       <Banner/>
       <Service/>      
       <Product/>
+      <CarouselContainer/>
       <Testimonials/>
       <Contact/>
       <Footer/>

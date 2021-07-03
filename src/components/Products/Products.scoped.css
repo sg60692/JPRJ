@@ -2,6 +2,7 @@
     filter: drop-shadow(0.3rem 0.3rem 0.8rem rgb(170, 169, 169));
     height:90%!important;
     max-height: 300px;
+    margin-top: 55px;
 }
 .img{
     width: 30%;
