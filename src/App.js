@@ -17,7 +17,7 @@ function App() {
       <Service/>      
       <Product/>
       <CarouselContainer/>
-      <Testimonials/>
+      <Ourteam/>
       <Contact/>
       <Footer/>
     </div>
