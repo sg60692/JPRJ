@@ -1,0 +1,70 @@
+#Header{
+    margin:0;
+    padding-left:20px;
+    padding-right:20px;
+    width:100%;
+    color:white;
+    z-index:100;
+    position: fixed;    
+    text-decoration: none;
+    display: flex;
+    background-color: #23242b;
+    filter: drop-shadow(3px 3px 3px rgb(152, 196, 238));
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.nav-heading{
+    font-family: 'Lobster', 'cursive';
+    background-color: #23242b;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0;
+    z-index:105;
+}
+.nav-heading img{
+    width:155px;
+    height:50px;
+    border-radius: 12px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+#custom-nav-btn,#custom-nav-cancel{
+    display: none;
+}
+.custom-menu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin:0;
+    margin-left:auto;
+}
+@media screen and (max-width: 800px) {
+    .nav-heading img{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #Header{
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+    .custom-menu{
+        height:0;
+        overflow: hidden;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+        transition: all 0.5s ease;
+    }
+    .custom-menu-visible{
+        height: 100vh;
+    }
+    .visible{
+        margin-left: auto;
+        margin-right: 10px;
+        font-size: 32px;
+        display: block!important;
+    }
+}

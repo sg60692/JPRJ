@@ -1,0 +1,34 @@
+li{
+    display: block;
+    margin: auto;
+    background-color: inherit;
+    font-family: "Lato", sans-serif;
+}
+a:hover,.active{
+    background-color: #127b8e;
+}
+a{
+    display: flex;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    height: 100%;   
+    text-decoration: none;
+}
+a::selection{
+    background-color: none!important;
+}
+li::selection{
+    background-color: none!important;
+}
+@media screen and (max-width: 800px) {
+    
+    a{
+        width: 100%;
+        height: 80px;
+        border-top:1px solid rgba(255,255,255,0.1);
+        border-bottom: 1px solid black;
+    }
+}

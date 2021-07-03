@@ -3,7 +3,7 @@ import './Service.scoped.css';
 
 function Service() {
     return (
-        <div>
+        <div id="services">
             <section class="fold fold-3">
                 <div class="text-center container">
                     <h2 style={{}}>Speed up your Growth</h2>

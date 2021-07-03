@@ -1,43 +1,139 @@
-/*reset css*/
-#Banner {margin: 0;padding: 0;text-decoration: none;list-style: none;box-sizing:border-box;}
-p{margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline; }
-#Banner , img {margin: 0; padding: 0; }
-img {font: inherit; vertical-align: baseline; border: 0; }
-section {display: block; } 
-#Banner {line-height: 0.75; } 
-#Banner {-webkit-box-sizing: border-box; box-sizing: border-box; }
-p{word-wrap: break-word; } 
+#Banner{
+    padding-top:50px;
+    position: relative;
+    background-color:#2a475e;
+}
+.banner-wrap {
+	display: inline-block;
+	filter: drop-shadow(5px 5px 5px rgb(1, 23, 44));
+    left:0;
+    width:60%;
+    z-index:10;
+    position: absolute;
+}
+.banner-overlay,.banner-background{
+    height:500px;
+}
+.banner-overlay{
+    left:0;
+    width:100%;
+    z-index:10;
+    background-color: aliceblue;
+    -webkit-clip-path: polygon(0% 0,0 100%,76% 100% , 100% 65%,76% 0);
+    clip-path: polygon(0% 0,0 100%,76% 100% , 100% 65%,76% 0);
+}
+.banner-background{
+    width: 60%;
+    margin-left: auto;
+    margin-bottom: auto;
+    z-index: 5;
+    margin-left: auto;
+}
+.banner-overlay img{
+    height: 100%;
+    margin-right:auto;
+    margin-left: -3%;
+    width: 99%;
+    -webkit-clip-path: polygon(0% 0,0 100%,75% 100% , 100% 65%,75% 0);
+    clip-path: polygon(0% 0,0 100%,75% 100% , 100% 65%,75% 0);
+}
+.overlay-text{
+    z-index: 6;
+    width: 60%;
+    margin-left: auto;
+    text-align: center;
+    align-items: center;
+    height: 500px;
+    overflow: hidden;
+    background: url("https://demos.creative-tim.com/material-dashboard-react/static/media/sidebar-2.22f68ba5.jpg");
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: white;
+}
+.layer {
+    background-color: rgba(7,25, 47, 0.87);
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    padding-left: 20%;
+    width: 100%;
+    height: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-
-@font-face {font-family: "Gotham Book"; src: url(../fonts/gotham_light.woff) format("woff"); font-weight: 300; font-style: normal; font-display: fallback; }
-@font-face {font-family: "Gotham Book"; src: url(../fonts/gotham_book.woff) format("woff"); font-weight: 400; font-style: normal; font-display: fallback; }
-@font-face {font-family: "Gotham Book"; src: url(../fonts/gotham_medium.woff) format("woff"); font-weight: 500; font-style: normal; font-display: fallback; }
-@font-face {font-family: "Gotham Book"; src: url(../fonts/gotham-bold.woff) format("woff"); font-weight: 700; font-style: normal; font-display: fallback; }
-#Banner {font-family: 'Gotham Book',-apple-system, BlinkMacSystemFont, Segoe UI, segoe ui, SegoeUI, Segoe, Helvetica, Arial, sans-serif; color: #000000; background: #fff; position: relative; -webkit-backface-visibility: hidden !important; backface-visibility: hidden !important; -webkit-overflow-scrolling: touch; font-size:62.5%;-webkit-text-size-adjust:100%; font-weight: 400; -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;font-size: 10px;}
-.good-company .about-codechef, .good-company .founder-words {width: 80%; display: block; }
-.good-company .founder-image, .good-company .founder-words {position:relative;margin-left: auto;margin-right: auto; } 
-.good-company .left-quote {
-  position: absolute; top: 0; left: 0; 
-  background: url(https://s33917.pcdn.co/wp-content/themes/mnet-careers/assets/images/misc/bhavin-left-quote.jpg) no-repeat; 
-  width: 34px; height: 27px; 
+.overlay-text h1{
+    font-family: 'Rajdhani', sans-serif;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 1px black;
 }
-.good-company .right-quote {
-  position: absolute; bottom: 0; right: 0; 
-  background: url(https://s33917.pcdn.co/wp-content/themes/mnet-careers/assets/images/misc/bhavin-right-quote.jpg) no-repeat; 
-  width: 34px; height: 27px; 
+.overlay-text h4{
+    font-family: 'Great Vibes', cursive;
 }
-.good-company .duo-wrapper{
-  align-items: center;
+.overlay-text .sub{
+    position: relative;
+    
+    align-items:center;
+    width:auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
 }
-.good-company .codechef-desc, .good-company .founder-text {font-size: 14px; color: #000; line-height: 27px; margin-bottom: 20px;text-align: center; } 
-.good-company .founder-text {padding: 0 50px; }
-.good-company .quote-wrapper {position: relative; }
-@media screen and (max-width: 767px) {
-  .good-company .about-codechef, .good-company .founder-words{
-    width: 100%; display: block; border-right: 0; 
-    max-width: 500px; width: 100%; margin: auto; 
-    float: none; padding: 0; 
-  }
-  .good-company .founder-text {text-align: left;}
+.sub div{
+    display: flex;
+    max-width: 332px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width:auto;
+}
+.overlay-text .left-leaf{
+    transform: rotate(340deg);
+    height: 60px;
+    margin-top: -10px;
+    margin-right: 5px;
+}
+.overlay-text .right-leaf{
+    transform: rotate(20deg);
+    height: 60px;
+    margin-top: -10px;
+}
+.contact-number{
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+}
+.phone-icon{
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 1px black;
+    color:#23242b;
+    padding:2px;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+h1{
+    font-size: 3rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 800px) {
+    .banner-wrap{
+        display: none;
+    }
+    .layer{
+        padding-left: 0;
+    }
+    .overlay-text{
+        width: 100%;
+        height: 400px;
+    }
+    .phone-icon{
+        margin-left: -15px;
+    }
 }
