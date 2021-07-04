@@ -63,6 +63,28 @@ function Service() {
                         </a>                  
                     </div>
                 </div>
+                <div class="text-center f bg-dark">
+                    <div class="d-flex flex-wrap container">
+                        <a class="comp-8 marketplace animate-zoom ml-auto">
+                            <div>
+                                <div class="icon-Distribution icon"></div>
+                            </div>
+                            <p class="sub-caption"> 
+                                Harness the power of quick and easy distribtuion 
+                                of Ferrous and Non Ferrous metals                                    
+                            </p>
+                        </a>                         
+                        <a class="comp-8 marketplace animate-zoom mr-auto">
+                            <div>
+                                <div class="icon-Distribution icon"></div>
+                            </div>
+                            <p class="sub-caption"> 
+                                Harness the power of quick and easy distribtuion 
+                                of Ferrous and Non Ferrous metals                                    
+                            </p>
+                        </a>                   
+                    </div>
+                </div>                
             </section>
         </div>
     )

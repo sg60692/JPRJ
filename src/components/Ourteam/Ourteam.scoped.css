@@ -20,6 +20,9 @@ h2{
     text-align: left;
     word-wrap: break-word;
 }
+h3{
+    margin-bottom: 20px!important;
+}
 #team{
     margin-top: 10px;
 }

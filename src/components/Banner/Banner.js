@@ -24,7 +24,8 @@ function Banner() {
                         </div>                    
                     </div>
                     <div className="contact-number">
-                        <PhoneIcon className="phone-icon"/>623980560                   
+                        <PhoneIcon className="phone-icon"/>
+                        <div>623980560</div>                   
                     </div>
                 </div>
                 

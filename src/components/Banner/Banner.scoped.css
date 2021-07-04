@@ -105,6 +105,10 @@
     margin-top: 20px;
     text-shadow: 1px 1px 1px black;
     font-size: 20px;
+    display: flex;
+    width:130px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .phone-icon{
     border-radius: 50%;
@@ -121,6 +125,9 @@ h1{
 }
 h4{
     font-size: 1.5rem;
+}
+.contact-number div{ 
+    margin-top: 0;
 }
 @media screen and (max-width: 800px) {
     .banner-wrap{

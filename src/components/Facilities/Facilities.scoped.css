@@ -1,0 +1,10 @@
+#Facilities{
+    background-image: linear-gradient(to left, rgb(153, 211, 238) , rgb(64,96,146));
+    color: aliceblue!important;
+    padding:30px 0
+}
+@media screen and (max-width: 1000px){
+    .d-flex{
+        flex-direction: column;
+    }
+}

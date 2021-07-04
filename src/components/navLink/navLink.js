@@ -9,7 +9,6 @@ function navLink(props){
                 to={props.link}
                 spy={true}
                 smooth={true}
-                offset={-50}
                 duration={300}
                 onClick={props.onClick}
             ><li>{props.text}</li>

@@ -6,7 +6,7 @@ function Ourteam() {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 text-center">
-                        <h2 className="section-heading text-uppercase">Our Amazing Team</h2>
+                        <h2 className="section-heading ">Our Amazing Team</h2>
                         <h3 className="section-subheading text-muted">We are dedicated to building a better tomorrow</h3>
                     </div>
                 </div>

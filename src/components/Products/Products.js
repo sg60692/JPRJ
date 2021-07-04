@@ -15,9 +15,7 @@ function Products() {
                             <h3 class="title">Services</h3>
                             <h4 class="subtitle">Revolutionize your Manufacturing process</h4>
                             <p class="caption"> 
-                                We aim to provide our customers an easygoing experience and 
-                                we hope to satisfy their expectations.Our goal is to fulfill 
-                                our purchase orders way before they hit their deadlines. 
+                                We aim to provide our customers an easygoing experience. 
                                 We provide excellent quality product, and each and every product of 
                                 ours is ensured to have the best raw material and depiction 
                                 of craftsmanship skills.
