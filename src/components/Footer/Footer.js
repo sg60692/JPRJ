@@ -17,7 +17,7 @@ function Footer() {
                         </li>
                     </ul>
                     <div class="copy-right text-center footer-bot-link">
-                        copyright &copy; {(new Date().getFullYear())} Tusharika Industries
+                        copyright &copy; {(new Date().getFullYear())} JPRJ
                     </div>
                 </div>
             </footer>
