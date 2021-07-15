@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 import './Header.scoped.css';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.webp';
 import TocIcon from '@material-ui/icons/Toc';
 import CancelIcon from '@material-ui/icons/Cancel';
 import NavLink from '../navLink/navLink';

@@ -1,112 +1,45 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  position: relative;
+img{
+  height:350px;
+  border-radius: 4px;
+  padding-bottom: 40px;
+}
+.caros{
+  background-color: #111;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+ /* change the size of the bullet and active color */
+
+ .swiper-pagination-bullet {
+  background-color: blue;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
 }
 
+/* change color of next 2 bullets in sequence to white*/
 
-#caros {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #151515;
-  height: 330px;
+.swiper-pagination-bullet-active-next, .swiper-pagination-bullet-active-next-next {
+background-color: white;
 }
 
-.slides {
-  display: grid;
-}
-.slides .slide {
-    grid-area: 1 / -1;
-}
+/* change color of previous bullet to white*/
 
-.slides button {
-    appearance: none;
-    background: transparent;
-    border: none;
-    color: white;
-    position: absolute;
-    font-size: 5rem;
-    width: 5rem;
-    height: 5rem;
-    top: 30%;
-    transition: opacity 0.3s;
-    opacity: 0.7;
-    z-index: 5;
+.swiper-pagination-bullet-active-prev {
+background-color: white;
 }
-.slides button:hover {
-  opacity: 1;
-}
-.slides button:focus {
-  outline: none;
-}
-
-.slides button:first-child {
-  left: -20px;
-}
-.slides button:last-child {
-  right: -20px;
-}
-
-
-.slideContent {
-  width: 40vw;
-  height: 280px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  transition: transform 0.5s ease-in-out;
-  opacity: 0.9;
-
-  display: grid;
-  align-content: center;
-
-  transform-style: preserve-3d;
-  transform: perspective(1000px) translateX(calc(100% * var(--offset)))
-    rotateY(calc(-45deg * var(--dir)));
-}
-
-.slideBackground {
-  position: fixed;
-  top: -25px;
-  left:-30vw;
-  bottom: 0;
-  background-size: cover;
-  background-position: center center;
-  z-index: -1;
-  opacity: 0.4;
-  transition: opacity 0.3s linear, transform 0.3s ease-in-out;
-  pointer-events: none;
-  width: 100vw!important;
-  height: 330px;
-  transform: translateX(calc(10% * var(--dir)));
-}
-.slide[data-active] {
-  z-index: 2;
-  pointer-events: auto;
-}
-.slide[data-active]  .slideBackground {
-    opacity: 0.2;
-    transform: none;
-}
-.slide[data-active]  .slideContentInner {
-  opacity: 1;
-}
-.slide[data-active]    {
-    --x: calc(var(--px) - 0.5);
-    --y: calc(var(--py) - 0.5);
-    opacity: 1;
-
-    transform: perspective(800px);
-}
-.slide[data-active] .slideContent:hover {
-      transition: none;
-      transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
-        rotateX(calc(var(--y) * -45deg));
-}
-@media screen and (max-width: 600px) {
-  .slideContent {
-    width: 88vw;
+@media screen and (max-width: 800px) {
+  .caros{
+    background-color: #111;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 160%;
+    margin-left: -30%;
   }
 }
+ 

@@ -1,7 +1,7 @@
 import React from 'react'
-import bannerOverlay from '../../images/BackgroundOverlay.jpg';
-import leafLeft from '../../images/leaf_left.png';
-import leafRight from '../../images/leaf_right.png';
+import bannerOverlay from '../../images/BackgroundOverlay.webp';
+import leafLeft from '../../images/leaf_left.webp';
+import leafRight from '../../images/leaf_right.webp';
 import PhoneIcon from '@material-ui/icons/Phone';
 import './Banner.scoped.css';
 
@@ -23,10 +23,10 @@ function Banner() {
                         <img src={leafRight} className="right-leaf"/>
                         </div>                    
                     </div>
-                    <div className="contact-number">
+                    <a className="contact-number" href="tel:6239803560">
                         <PhoneIcon className="phone-icon"/>
-                        <div>623980560</div>                   
-                    </div>
+                        <div>623980560</div>
+                    </a>  
                 </div>
                 
             </div>            

@@ -1,5 +1,7 @@
-import React,{useState} from 'react';
+import React from "react";
+import Swiper from "react-id-swiper";
 import './caros.scoped.css'
+import "swiper/css/swiper.css";
 const slides = [
   {
     title: "Machu Picchu",
@@ -38,64 +40,47 @@ const slides = [
   }
 ];
 
-const initialState = {
-  slideIndex: 0
-};
-
-const slidesReducer = (state, event) => {
-  if (event.type === "NEXT") {
-    return {
-      ...state,
-      slideIndex: (state.slideIndex + 1) % slides.length
-    };
-  }
-  if (event.type === "PREV") {
-    return {
-      ...state,
-      slideIndex:
-        state.slideIndex === 0 ? slides.length - 1 : state.slideIndex - 1
-    };
-  }
-};
-
-function Slide({ slide, offset }) {
-  const active = offset === 0 ? true : null;
-
-  return (
-    <div
-      className="slide"
-      data-active={active}
-      style={{
-        "--offset": offset,
-        "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1
-      }}
-    >
-     
-      <div
-        className="slideContent"
-        style={{
-          backgroundImage: `url('${slide.image}')`
-        }}
-      >
-      </div>
-    </div>
-  );
-}
-
-export default function Caros() {
-  const [state, dispatch] = React.useReducer(slidesReducer, initialState);
+const Slider = () => {
+  const params = {
+    pagination: {
+      el: ".swiper-pagination",
+      style:{
+        backgroundColor:"white"
+      },
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    spaceBetween: 30,
+    effect: "coverflow",
+    centeredSlides: true,
+    slidesPerView: 2,
+    coverflowEffect: {
+      rotate: 20, 
+      stretch: 40, 
+      depth: 300,
+      modifier: 1, 
+      slideShadows: false 
+    },
+    autoplay:{
+      delay:2000,
+      disableOnInteraction:false
+    },
+    loop:true
+  };
 
   return (
-    <div id="caros">
-      <div className="slides">
-        <button onClick={() => dispatch({ type: "NEXT" })}>‹</button>
-
-        {[...slides, ...slides, ...slides].map((slide, i) => {
-          let offset = slides.length + (state.slideIndex - i);
-          return <Slide slide={slide} offset={offset} key={i} />;
-        })}
-        <button onClick={() => dispatch({ type: "PREV" })}>›</button>
-      </div>
+  <div className="caros">
+    <div>
+      <Swiper {...params}>
+        {slides.map(item => (
+          <img src={item.image} key={item.title} alt="swipe" />
+        ))}
+      </Swiper>
     </div>
-  );
-}
+  </div>);
+};
+
+export default Slider;

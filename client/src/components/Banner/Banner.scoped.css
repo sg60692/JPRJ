@@ -45,7 +45,7 @@
     align-items: center;
     height: 500px;
     overflow: hidden;
-    background: url("https://demos.creative-tim.com/material-dashboard-react/static/media/sidebar-2.22f68ba5.jpg");
+    background: url("../../images/background.webp");
     background-color:black;
     background-repeat: no-repeat;
     background-size: cover;

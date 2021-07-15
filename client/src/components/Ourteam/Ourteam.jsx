@@ -1,5 +1,6 @@
 import React from 'react'
 import './Ourteam.scoped.css'
+import '../../bootstrap/bootstrap.scoped.css'
 function Ourteam() {
     return (
         <section className="bg-light page-section" id="team">

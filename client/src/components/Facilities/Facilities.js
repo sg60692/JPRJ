@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Ourteam/Ourteam.scoped.css'
 import './Facilities.scoped.css'
+import '../../bootstrap/bootstrap.scoped.css'
 function Facilities() {
     return (
         <section className="page-section" id="Facilities">

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Ourteam/Ourteam.scoped.css'
 import './Moto.scoped.css'
-
+import '../../bootstrap/bootstrap.scoped.css'
 function Moto() {
     return (
         <section className="page-section" id="Moto">

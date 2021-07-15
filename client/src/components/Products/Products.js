@@ -1,5 +1,5 @@
 import React from 'react'
-import Project_1 from "../../images/Project_1.jpeg";
+import Project_1 from "../../images/Project_1.webp";
 import './Products.scoped.css';
 function Products() {
     return (

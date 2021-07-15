@@ -7,7 +7,8 @@ const dotenv=require('dotenv');
 const PORT = process.env.PORT||5000; 
 dotenv.config();
 const routes = require('./routes/api');
-mongoose.connect(process.env.Con,{
+console.log(process.env.Con)
+mongoose.connect(process.env.Con||"mongodb+srv://admin:admin@youtubedb.mnwk5.mongodb.net/YoutubeDB?retryWrites=true&w=majority",{
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

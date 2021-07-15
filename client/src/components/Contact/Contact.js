@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { $CombinedState } from 'redux';
+import '../../bootstrap/bootstrap.scoped.css'
 import { createInquiry, resetColor } from '../../actions/index.js';
 import './Contact.scoped.css';
 const Contact=() => {
