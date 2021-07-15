@@ -63,7 +63,7 @@ function Service() {
                         </a>                  
                     </div>
                 </div>
-                <div class="text-center f bg-dark">
+                <div class="text-center fc bg-dark">
                     <div class="d-flex flex-wrap container">
                         <a class="comp-8 marketplace animate-zoom ml-auto">
                             <div>

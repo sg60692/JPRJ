@@ -14,7 +14,7 @@
    /* change the size of the bullet and active color */
 
    .swiper-container-horizontal > .swiper-pagination > .swiper-pagination-bullet {
-    opacity: 0.2;
+    opacity: 0.4;
     background: #FFF!important;
   }
   .swiper-container-horizontal > .swiper-pagination > .swiper-pagination-bullet-active {

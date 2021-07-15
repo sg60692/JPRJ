@@ -47,8 +47,13 @@ h2{
     .service-large{
         display:none;
     }
+    .fc{margin-top: -30px;}
 }
 .f{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fc{
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -61,5 +66,6 @@ h2{
         margin-right: auto;
         margin-left: 30px;
     }
+    
 }
 
