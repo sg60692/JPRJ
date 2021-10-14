@@ -23,15 +23,33 @@ function Service() {
             <div class="text-center f ">                
                 <div class="d-flex flex-wrap container">
                     <AnimationRightLeft direction="left"className="comp-8 animate-left service-large">
-                            <div>
-                                <div class="icon-Manufacturing icon"/>
-                            </div> 
-                            <p class="sub-caption">
-                                Leverage competitive demand using faster and 
-                                more efficient manufacturing.                                       
-                            </p>
+                        <div>
+                            <div class="icon-Manufacturing icon"/>
+                        </div> 
+                        <p class="sub-caption">
+                            Leverage competitive demand using faster and 
+                            more efficient manufacturing.                                       
+                        </p>
                     </AnimationRightLeft>
-                    <AnimationZoom direction="left"className="comp-8 animate-left service-large">
+                    <AnimationZoom className="comp-8 animate-left service-small">
+                        <div>
+                            <div class="icon-Manufacturing icon"/>
+                        </div> 
+                        <p class="sub-caption">
+                            Leverage competitive demand using faster and 
+                            more efficient manufacturing.                                       
+                        </p>
+                    </AnimationZoom>
+                    <AnimationZoom className="comp-8 animate-left">
+                        <div>
+                            <div class="icon-Manufacturing icon"/>
+                        </div> 
+                        <p class="sub-caption">
+                            Leverage competitive demand using faster and 
+                            more efficient manufacturing.                                       
+                        </p>
+                    </AnimationZoom>
+                    <AnimationZoom className="comp-8 animate-left service-small">
                         <div>
                             <div class="icon-Manufacturing icon"/>
                         </div> 

@@ -12,6 +12,7 @@ function AnimationRightLeft(props) {
     gsap.to(elem,{
       scrollTrigger:{
         trigger:elem,
+        toggleActions:"play pause reverse pause",
         scrub:0.2
       },
       x:0

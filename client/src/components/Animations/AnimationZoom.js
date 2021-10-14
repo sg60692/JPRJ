@@ -12,6 +12,7 @@ function AnimationZoom(props) {
     gsap.to(elem,{
       scrollTrigger:{
         trigger:elem,
+        toggleActions:"play pause reverse pause",
         scrub:0.2
       },
       scale:1
