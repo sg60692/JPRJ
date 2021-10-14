@@ -1,78 +1,9 @@
-import React from 'react'
-import './Ourteam.scoped.css'
-import '../../bootstrap/bootstrap.scoped.css'
+import React from 'react';
+import './Ourteam.scoped.css';
+import '../../bootstrap/bootstrap.scoped.css';
+import AnimationRightLeft from "../Animations/AnimateRightLeft";
 
-import { useRef ,useEffect ,useState} from 'react';
-import Project_1 from "../../images/Project_1.webp";
-
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 function Ourteam() {
-    const boxRef1 = useRef();
-    const boxRef2= useRef();
-    const boxRef3=useRef();
-    const boxRef4=useRef();
-    gsap.registerPlugin(ScrollTrigger)
-    function getWindowDimensions() {
-        const { innerWidth: width, innerHeight: height } = window;
-        return {
-          width,
-          height
-        };
-      }
-      const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-    useEffect(() => {
-         
-        gsap.to(boxRef1.current, {
-             scrollTrigger:{
-                 trigger: boxRef1.current,
-                 scrub: true,
-                
-                start: "top 100%",
-                end: "+=400",
-                toggleActions: 'play none none reverse',
-                // start: "bottom",
-            //  markers:true
-             },
-             
-            //  x: 200,
-            duration: 300,
-            x:-windowDimensions.width/30,
-            
-                     
-            
-        
-           
-            }
-        )
-       
-        }
-       
-       
-    )
-    useEffect(()=>{
-        gsap.to(boxRef2.current, {
-            scrollTrigger:{
-                trigger: boxRef2.current,
-                scrub: true,
-               
-               start: "top 100%",
-               end: "+=400",
-               toggleActions: 'play none none reverse',
-               // start: "bottom",
-            // markers:true
-            },
-            
-           //  x: 200,
-           duration: 300,
-           x: +windowDimensions.width/30,
-                    
-           
-       
-          
-           }
-       )
-    })
     return (
         <section className="bg-light page-section" id="team">
             <div className="container">
@@ -82,9 +13,9 @@ function Ourteam() {
                         <h3 className="section-subheading text-muted">We are dedicated to building a better tomorrow</h3>
                     </div>
                 </div>
-                <div className="row" >
+                <div className="row">
                     <div className="col-sm-6">
-                        <div className="animate-left" ref={boxRef1}>
+                        <AnimationRightLeft direction="left">
                             <div className="Member shadow-lg">
                                 <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />
                                 <div>
@@ -92,10 +23,10 @@ function Ourteam() {
                                     <p className="text-muted">Lead Designer</p>
                                 </div>                                
                             </div>                            
-                        </div>
+                        </AnimationRightLeft>
                     </div>
                     <div className="col-sm-6">
-                        <div className="animate-right" ref={boxRef2}>
+                        <AnimationRightLeft direction="right">
                             <div className="Member shadow-lg">                                
                                 <div>
                                     <h4>Kay Garland</h4>
@@ -105,7 +36,7 @@ function Ourteam() {
                                  className="ml-auto"
                                 src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />                             
                             </div>                            
-                        </div>
+                        </AnimationRightLeft>
                     </div>
                 </div>
                 <div className="row">
