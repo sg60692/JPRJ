@@ -1,13 +1,25 @@
-import React from "react";
-import { useRef, useEffect, useState } from "react";
-import Project_1 from "../../images/Project_1.webp";
+import React,{useRef,useEffect} from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function AnimationRightLeft() {
+function AnimationRightLeft(props) {
+  let elem = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(()=>{
+    gsap.from(elem,{
+      x:props.direction==="left"?-100:100
+    });
+    gsap.to(elem,{
+      scrollTrigger:{
+        trigger:elem,
+        scrub:0.2
+      },
+      x:0
+    })
+  },[]);
   return(
-    <div>
-
+    <div ref={el => {elem=el;}} {...props}>
+      {props.children}
     </div>
   );
 }
