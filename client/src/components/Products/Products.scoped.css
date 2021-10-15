@@ -16,6 +16,11 @@ h2{
 #Product{
     margin-top: 30px;
 }
+@media screen and (min-width: 768px){
+    .img{
+        margin-right: -10%;
+    }
+}
 @media screen and (max-width: 768px){
     .img{
         width: 100%;

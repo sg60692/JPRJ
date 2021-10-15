@@ -10,7 +10,7 @@ function Products() {
                 <div class="container">
                     <h2 class="text-center">One Tag, Many Possibilities.</h2>
                     <div class="d-flex align-center justify-content-even comp-1 comp-7">
-                        <AnimationRightLeft direction="left" className="img">
+                        <AnimationRightLeft direction="left" className="img" dist={50}>
                             <img src={Project_1} class="img-responsive" alt="Search Ads"/>
                         </AnimationRightLeft >
                         <AnimationRightLeft direction="right" className="content-wrap info-wrapper">
