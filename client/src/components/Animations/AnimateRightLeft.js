@@ -5,9 +5,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 function AnimationRightLeft(props) {
   let elem = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
-  useEffect(()=>{
-    gsap.from(elem,{
-      x:props.direction==="left"?-100:100
+  console.log(props)
+  useEffect(() => {
+    console.log(elem,"ok")
+    gsap.from(elem, {
+      x: props.direction === "left" ? -100 : 100
+    
+    
     });
     gsap.to(elem,{
       scrollTrigger:{
@@ -21,6 +25,7 @@ function AnimationRightLeft(props) {
   return(
     <div ref={el => {elem=el;}} {...props}>
       {props.children}
+      
     </div>
   );
 }

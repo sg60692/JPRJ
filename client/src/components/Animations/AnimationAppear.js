@@ -1,37 +1,32 @@
-import { easings } from 'react-animation'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useState,useEffect,useRef} from 'react';
-function AnimationAppear(){
-    const stylex = {
-        animation: `pop-in ${easings.easeOutExpo} 800ms forwards`,
-    
-    }
-    // gsap.registerPlugin(ScrollTrigger)
-    const boxRef3 = useRef();
-    const boxRef4 = useRef();
-    useEffect(() => {
-        const tl = gsap.timeline({
+import React,{useRef,useEffect} from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-            scrollTrigger: {
-                trigger: boxRef3.current,
-                start: "+=25 80%",
-                end: "+=200 30%",
-                //   scrub: true,
-                markers: true,
-                toggleActions: "play reverse play reverse",
-            }
-        
-        });
-      
-        tl
-            .to(boxRef3.current, { opacity: 1, duration: 1 })
-            .to(boxRef3.current, { opacity: 1, duration: 0.5 },
-                0.5)
-            .to(boxRef4.current, { opacity: 1, duration: 0.5 })
-            .to(boxRef4.current, { opacity: 1, duration: 0.5 },
-                0.5)
-        
+function AnimationAppear(props) {
+  let elem = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
+  console.log(props)
+  useEffect(() => {
+    console.log(elem,"ok")
+    gsap.from(elem, {
+      opacity: -1
+    
+    
+    });
+    gsap.to(elem,{
+      scrollTrigger:{
+        trigger:elem,
+        toggleActions:"play pause reverse pause",
+        scrub:0.5
+      },
+      opacity:1
     })
+  },[]);
+  return(
+    <div ref={el => {elem=el;}} {...props}>
+      {props.children}
+      
+    </div>
+  );
 }
 export default AnimationAppear;

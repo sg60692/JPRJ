@@ -2,12 +2,13 @@ import React from "react";
 import "./Service.scoped.css";
 import AnimationRightLeft from "../Animations/AnimateRightLeft";
 import AnimationZoom from "../Animations/AnimationZoom";
-
+import AnimationAppear from "../Animations/AnimationAppear"
 
 function Service() {
   return (
     <div id="services">
       <section class="fold fold-3">
+        <AnimationAppear>
         <div class="text-center container">
           <h2>
             Speed up your Growth
@@ -18,7 +19,7 @@ function Service() {
             </h4>
           </div>
         </div>
-                
+            </AnimationAppear>    
         <div class="wrapper">
             <div class="text-center f ">                
                 <div class="d-flex flex-wrap container">
