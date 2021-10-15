@@ -9,15 +9,13 @@ function AnimationAppear(props) {
   useEffect(() => {
     console.log(elem,"ok")
     gsap.from(elem, {
-      opacity: -1
-    
-    
+      opacity: -1  
     });
     gsap.to(elem,{
       scrollTrigger:{
         trigger:elem,
         toggleActions:"play pause reverse pause",
-        scrub:0.5
+        scrub:true
       },
       opacity:1
     })
