@@ -23,6 +23,7 @@ function Header() {
                     <NavLink onClick={handleClick} key={"Service"} text={"Service"} link="services"/>
                     <NavLink onClick={handleClick} key={"Projects"} text={"Projects"} link="Product"/>
                     <NavLink onClick={handleClick} key={"About"} text={"About"} link="team"/>
+                    <NavLink onClick={handleClick} key={"Features"} text={"Features"} link="Features"/>
                     <NavLink onClick={handleClick} key={"Contact"} text={"Contact"} link="Contact"/>
                 </ul>
             </div>

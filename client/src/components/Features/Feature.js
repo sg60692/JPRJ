@@ -4,7 +4,7 @@ import "./FeatureX.css";
 import FadeInAnimation from "../Animations/FadeInAnimation";
 function Features() {
   return (
-    <>
+    <div id="Features">
       <ul class="cards">
         <li>
           <FadeInAnimation direction="up">
@@ -99,7 +99,7 @@ your profits & losses. "
           </FadeInAnimation>
         </li>
       </ul>
-    </>
+    </div>
   );
 }
 export default Features;

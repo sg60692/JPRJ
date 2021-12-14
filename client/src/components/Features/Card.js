@@ -3,7 +3,7 @@ import "./CardX.css";
 function Cards(CardProperties) {
   return (
     <>
-      <a href="" class="card">
+      <a class="card">
         <img src={CardProperties.BackGroundLink} class="card__image" alt="" />
         <div class="card__overlay">
           <div class="card__header">
