@@ -88,16 +88,6 @@ your profits & losses. "
             />
           </FadeInAnimation>
         </li>
-        <li>
-          <FadeInAnimation direction="up">
-            <SingleCard
-              BackGroundLink="https://image.shutterstock.com/image-photo/stock-market-forex-trading-graph-260nw-1055135789.jpg"
-              DescriptionLink="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Bipin_Rawat_Chief_of_Defence_Staff_%28CDS%29.jpg/128px-Bipin_Rawat_Chief_of_Defence_Staff_%28CDS%29.jpg"
-              Heading="Family Account"
-              Description="Access your family member's Portfolio with one single login"
-            />
-          </FadeInAnimation>
-        </li>
       </ul>
     </div>
   );

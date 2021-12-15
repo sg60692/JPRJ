@@ -12,6 +12,9 @@ import Contact from "./components/Contact/Contact.js";
 import Footer from "./components/Footer/Footer.js";
 import Features from "./components/Features/Feature";
 function App() {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
   return (
     <div className="App d-flex d-coloum">
       <Header />

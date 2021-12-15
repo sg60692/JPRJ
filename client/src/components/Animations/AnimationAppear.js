@@ -1,21 +1,18 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 function AnimationAppear(props) {
   let elem = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
-  console.log(props);
   useEffect(() => {
-    console.log(elem, "ok");
-    gsap.from(elem, {
+    gsap.set(elem, {
       opacity: 0,
     });
     gsap.to(elem, {
       scrollTrigger: {
         trigger: elem,
         toggleActions: "play pause reverse pause",
-        scrub: true,
+        scrub:0.2,
       },
       opacity: 1,
     });

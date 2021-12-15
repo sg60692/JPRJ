@@ -72,7 +72,8 @@ const Slider = () => {
   };
   
   return (
-  <div className="caros">
+  <div class="binder">
+    <div className="caros">
     <div>
       <Swiper {...params}>
         {slides.map(item => (
@@ -95,7 +96,9 @@ const Slider = () => {
         </div>
         </div>
     </div>
-  </div>);
+  </div>
+  </div>
+  );
 };
 
 export default Slider;
