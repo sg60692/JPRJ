@@ -5,6 +5,7 @@ img{
 }
 .binder{
   overflow: hidden;
+  background-color: #111;
 }
 .caros{
   background-color: #111;
@@ -12,7 +13,9 @@ img{
   padding-bottom: 10px;
   padding-left: 50px;
   padding-right: 50px;
-  
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
  /* change the size of the bullet and active color */
 

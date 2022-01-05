@@ -65,7 +65,7 @@ const Slider = () => {
       slideShadows: false 
     },
     autoplay:{
-      delay:2000,
+      delay:3000,
       disableOnInteraction:false
     },
     loop:true
