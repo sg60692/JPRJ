@@ -1,6 +1,8 @@
-import React from 'react'
-import './Ourteam.scoped.css'
-import '../../bootstrap/bootstrap.scoped.css'
+import React from 'react';
+import './Ourteam.scoped.css';
+import '../../bootstrap/bootstrap.scoped.css';
+import AnimationRightLeft from "../Animations/AnimateRightLeft";
+
 function Ourteam() {
     return (
         <section className="bg-light page-section" id="team">
@@ -13,7 +15,7 @@ function Ourteam() {
                 </div>
                 <div className="row">
                     <div className="col-sm-6">
-                        <div className="animate-left">
+                        <AnimationRightLeft direction="left">
                             <div className="Member shadow-lg">
                                 <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />
                                 <div>
@@ -21,10 +23,10 @@ function Ourteam() {
                                     <p className="text-muted">Lead Designer</p>
                                 </div>                                
                             </div>                            
-                        </div>
+                        </AnimationRightLeft>
                     </div>
                     <div className="col-sm-6">
-                        <div className="animate-right">
+                        <AnimationRightLeft direction="right">
                             <div className="Member shadow-lg">                                
                                 <div>
                                     <h4>Kay Garland</h4>
@@ -34,7 +36,7 @@ function Ourteam() {
                                  className="ml-auto"
                                 src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" />                             
                             </div>                            
-                        </div>
+                        </AnimationRightLeft>
                     </div>
                 </div>
                 <div className="row">

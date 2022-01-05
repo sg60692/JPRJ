@@ -70,17 +70,35 @@ const Slider = () => {
     },
     loop:true
   };
-
+  
   return (
-  <div className="caros">
+  <div class="binder">
+    <div className="caros">
     <div>
       <Swiper {...params}>
         {slides.map(item => (
           <img src={item.image} key={item.title} alt="swipe" />
         ))}
       </Swiper>
+      <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="container-general">
+            <div class="gallery-wrap wrap-effect-1">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
     </div>
-  </div>);
+  </div>
+  </div>
+  );
 };
 
 export default Slider;

@@ -3,6 +3,9 @@ img{
   border-radius: 4px;
   padding-bottom: 40px;
 }
+.binder{
+  overflow: hidden;
+}
 .caros{
   background-color: #111;
   padding-top: 30px;

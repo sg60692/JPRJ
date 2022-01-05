@@ -11,6 +11,7 @@ function navLink(props){
                 smooth={true}
                 duration={300}
                 onClick={props.onClick}
+                offset={-30}
             ><li>{props.text}</li>
             </Link>
         

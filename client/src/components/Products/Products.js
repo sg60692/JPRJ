@@ -1,6 +1,8 @@
 import React from 'react'
 import Project_1 from "../../images/Project_1.webp";
 import './Products.scoped.css';
+import AnimationRightLeft from "../Animations/AnimateRightLeft";
+
 function Products() {
     return (
         <div id="Product">
@@ -8,10 +10,10 @@ function Products() {
                 <div class="container">
                     <h2 class="text-center">One Tag, Many Possibilities.</h2>
                     <div class="d-flex align-center justify-content-even comp-1 comp-7">
-                        <div class="img animate-left">
+                        <AnimationRightLeft direction="left" className="img" dist={50}>
                             <img src={Project_1} class="img-responsive" alt="Search Ads"/>
-                        </div>
-                        <div class="content-wrap info-wrapper animate-right">
+                        </AnimationRightLeft >
+                        <AnimationRightLeft direction="right" className="content-wrap info-wrapper">
                             <h3 class="title">Services</h3>
                             <h4 class="subtitle">Revolutionize your Manufacturing process</h4>
                             <p class="caption"> 
@@ -20,7 +22,7 @@ function Products() {
                                 ours is ensured to have the best raw material and depiction 
                                 of craftsmanship skills.
                             </p>
-                        </div>
+                        </AnimationRightLeft >
                     </div>
                 </div>
             </section>
